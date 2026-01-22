@@ -25,6 +25,7 @@ module "ec2" {
   ami_id        = "ami-0c02fb55956c7d316"
   instance_type = "t2.micro"
   subnet_id     = module.vpc.subnet_id
+  vpc_id        = module.vpc.vpc_id
 }
 
 module "s3" {
